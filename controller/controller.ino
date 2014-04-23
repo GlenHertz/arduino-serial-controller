@@ -1,6 +1,19 @@
 
+// A simple program to turn ON/OFF pins on the arduino over 
+// the serial port via the command string like:
+//
+//   zone,minutes,debug,
+//
+// zone is 0 to 8 # zero turns all pins off
+// minutes is number of minutes to keep pin HIGH
+// if debug is 1 it will print back status messages on the serial port
+// 
+// If training arguments are missing, they will receive zero.
+//
+// Hint: use a non-numeric character at the end to get a faster response.
 
-int relay_channels[8]={39,41,43,45,47,49,51,53};
+
+int relay_channels[8]={39,41,43,45,47,49,51,53};  // These pins can be controlled via zone 1 to 8
 
 int zone = 0;   // zero is for all zones off
 unsigned long seconds = 0;
