@@ -1,4 +1,3 @@
-
 // A simple program to turn ON/OFF pins on the arduino over 
 // the serial port via the command string like:
 //
@@ -8,7 +7,7 @@
 // minutes is number of minutes to keep pin HIGH
 // if debug is 1 it will print back status messages on the serial port
 // 
-// If training arguments are missing, they will receive zero.
+// If trailing arguments are missing, they will receive zero.
 //
 // Hint: use a non-numeric character at the end to get a faster response.
 
